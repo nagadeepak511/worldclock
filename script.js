@@ -4,6 +4,8 @@ var time = ''
 var angle = 0
 
 async function onStart() {
+    getTimeZones()
+
     time = document.getElementById('time').innerText
     time = time.split(':')
     test()

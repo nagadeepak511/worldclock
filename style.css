@@ -14,6 +14,11 @@ body{
     font-weight: 600;
 }
 
+#heading-icon{
+    font-size: 45px !important;
+    line-height: 1;
+}
+
 #content-container{
     margin: auto;
     width: 950px;

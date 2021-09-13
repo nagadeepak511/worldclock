@@ -9,7 +9,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1 id="heading">World Clock</h1>
+        <h1 id="heading"><span id="heading-icon"><i class="glyphicon glyphicon-time"></i></span> World Clock</h1>
         <div id="content-container" class='container'>
             <hr>
             <div id="clock-container">
@@ -52,7 +52,6 @@
         </div>
     </body>
     <script>
-        getTimeZones()
-        window.onload = onStart();
+        window.onload = onStart;
     </script>
 </html>
