@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    margin: auto;
+    background-color: #1c2538 !important;
+    text-align: center;
+    color: white;
+}
+
+#heading{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#content-container{
+    margin: auto;
+    width: 950px;
+}
+
+.clock{
+    height: 424px;
+    width: 424px;
+    float: left;
+    border: 12px solid white;
+    border-radius: 50%;
+    text-align: center;
+    transform: rotate(90deg) scale(.75);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8CSByJ_zneCpaOBP7VlIEqgn3v6dXEyNgUA&usqp=CAU');
+}
+
+#clock-container{
+    /* transform: scale(0.75); */
+}
+
+#minute-hand{
+    z-index: 0;
+    border: 1px solid white;
+    height: 10px;
+    width: 175px;
+}
+
+#hour-hand{
+    background-color: white;
+    height: 10px;
+    width: 125px;
+    z-index: -100;
+}
+
+#second-hand{
+    background-color: red;
+    height: 10px;
+    width: 200px;
+    z-index: 100;
+}
+
+#minute-frame{
+    z-index: 0;
+    width: 350px;
+    /* transform: rotate(30deg); */
+    background-color: transparent;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 195px;
+}
+
+#hour-frame{
+    z-index: -100;
+    width: 250px;
+    background-color: transparent;
+    margin-left: 75px;
+    position: absolute;
+    margin-top: 195px;
+    /* transform: rotate(-30deg); */
+}
+
+#second-frame{
+    z-index: 100;
+    width: 380px;
+    background-color: transparent;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 195px;
+    /*transform: rotate(90deg);*/
+}
+
+#details{
+    width: 400px;
+    height: 400px;
+    margin-left: 52px;
+    color: white;
+    margin-top: 0 !important;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+h2{
+    opacity: 0.75 !important;
+}
+
+#box{
+    margin: auto;
+    width: 145px;
+}
+
+#typing-animation{
+    font-family: monospace;
+    width: 0px;
+    color: #FFE7AD;
+    font-size: 20px;
+    height: 25px;
+    font-weight: 600 !important;
+    margin: 8px;
+    overflow: hidden;
+    border-right: 2px solid #FFE7AD;
+    display: inline-block;
+    animation: typing-effect 5s infinite;
+}
+
+@keyframes typing-effect{
+    0% {width: 0px; border-right: none;}
+    5% {width: 12px; border-right: 2px solid #FFE7AD;}
+    10% {width: 24px; border-right: none;}
+    15% {width: 36px; border-right: 2px solid #FFE7AD;}
+    20% {width: 48px; border-right: none;}
+    25% {width: 60px; border-right: 2px solid #FFE7AD;}
+    30% {width: 72px; border-right: none;}
+    35% {width: 84px; border-right: 2px solid #FFE7AD;}
+    40% {width: 96px; border-right: none;}
+    45% {width: 108px; border-right: 2px solid #FFE7AD;}
+    50% {width: 120px; border-right: none;}
+    55% {width: 120px; border-right: none;}
+    60% {width: 108px; border-right: 2px solid #FFE7AD;}
+    65% {width: 96px; border-right: none;}
+    70% {width: 84px; border-right: 2px solid #FFE7AD;}
+    75% {width: 72px; border-right: none;}
+    80% {width: 60px; border-right: 2px solid #FFE7AD;}
+    85% {width: 48px; border-right: none;}
+    90% {width: 36px; border-right: 2px solid #FFE7AD;}
+    95% {width: 24px; border-right: none;}
+    100% {width: 12px; border-right: 2px solid #FFE7AD;}
+}

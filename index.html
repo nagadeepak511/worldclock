@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Analog clock</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h1 id="heading">World Clock</h1>
+        <div id="content-container" class='container'>
+            <hr>
+            <div id="clock-container">
+                <div class="clock">
+                    <div id="minute-frame">
+                        <div id="minute-hand"></div>
+                    </div>
+                    <div id="hour-frame">
+                        <div id="hour-hand"></div>
+                    </div>
+                    <div id="second-frame">
+                        <div id="second-hand"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="details">
+                <h1>Search for a timezone</h1>
+                <div class='input-group'>
+                    <select id="timezones" class="form-control" onchange='displayResults()'></select>
+                    <div class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </div>
+                    <!-- <datalist name="timezones" id="timezones">
+                        <option value="America/Argentina/Salta">Salta</option>
+                    </datalist> -->
+                </div>
+                <div id="details-complete">
+                    <h2>America/Argentina/Salta</h2>
+                    <h2>Date: <span>2021-09-13</span></h2>
+                    <h2>Time: <span id="time">08:08:30</span></h2>
+                    <h2>Day of the week: <span>1</span></h2>
+                    <h2>Day of the year: <span>256</span></h2>
+                </div>
+            </div>
+        </div>
+        <div id="box">
+            <div id="typing-animation">
+                NagaDeepak
+            </div>
+        </div>
+    </body>
+    <script>
+        getTimeZones()
+        window.onload = onStart();
+    </script>
+</html>
